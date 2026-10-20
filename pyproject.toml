@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "load-for-database"
+version = "0.3.0"
+description = "Function to load data from XLSX files to a SQL Server database"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Lucas Bononi"}]
+dependencies = ["pandas", "sqlalchemy", "pyodbc", "openpyxl"]
+
+[project.urls]
+Repository = "https://github.com/Bononi48/load_for_database"
+
+[tool.setuptools.packages.find]
+include = ["load_for_database*"]
